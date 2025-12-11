@@ -7,7 +7,5 @@
  *
  * This file serves as fallback/TypeScript export helper
  */
-
-// Metro will resolve to .native.tsx or .web.tsx automatically
 export { AdBanner } from './AdBanner.native';
-
+//# sourceMappingURL=AdBanner.d.ts.map

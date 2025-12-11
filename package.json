@@ -1,12 +1,14 @@
 {
   "name": "@umituz/react-native-admob",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Google AdMob integration for React Native apps - Banner, interstitial, and rewarded ads",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
     "version:minor": "npm version minor -m 'chore: release v%s'",
     "version:major": "npm version major -m 'chore: release v%s'"
   },
@@ -34,12 +36,13 @@
     "@types/react-native": "^0.73.0",
     "react": "^18.2.0",
     "react-native": "^0.74.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.9.3"
   },
   "publishConfig": {
     "access": "public"
   },
   "files": [
+    "lib",
     "src",
     "README.md",
     "LICENSE"
