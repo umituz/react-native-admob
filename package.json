@@ -1,6 +1,6 @@
 {
   "name": "@umituz/react-native-admob",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Google AdMob integration for React Native apps - Banner, interstitial, and rewarded ads",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
